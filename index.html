@@ -1,0 +1,1378 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dasari Chinna Gangaiah (Chinna) — Tallapalli Sarpanch 2026</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Telugu:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', '"Noto Sans Telugu"', 'sans-serif'],
+            telugu: ['"Noto Sans Telugu"', '"Plus Jakarta Sans"', 'sans-serif'],
+          },
+          colors: {
+            emerald: {
+              850: '#064e3b',
+              950: '#022c22',
+            },
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', 'Noto Sans Telugu', sans-serif;
+      background-color: #f8fafc;
+      color: #0f172a;
+      overflow-x: hidden;
+    }
+
+    /* Prevent Telugu vowel/matra vertical clipping */
+    .te {
+      font-family: 'Noto Sans Telugu', 'Plus Jakarta Sans', sans-serif;
+      line-height: 1.65;
+    }
+
+    /* Proper offset for sticky header anchor jumps */
+    section[id], footer[id] {
+      scroll-margin-top: 5.5rem;
+    }
+
+    /* Glassmorphism surfaces */
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.78);
+      box-shadow: 0 12px 32px -8px rgba(6, 95, 70, 0.1), 0 4px 12px -2px rgba(15, 23, 42, 0.04);
+    }
+
+    .glass-dark {
+      background: rgba(6, 78, 59, 0.88);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border: 1px solid rgba(255, 255, 255, 0.14);
+    }
+
+    /* Smooth 3D tilt hover */
+    .tilt-card {
+      transition: transform 0.25s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.25s ease;
+      transform-style: preserve-3d;
+      will-change: transform;
+    }
+    .tilt-card:hover {
+      box-shadow: 0 22px 44px -12px rgba(6, 95, 70, 0.18);
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(22px);
+      transition: opacity 0.65s ease, transform 0.65s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Active scroll-spy nav link */
+    .nav-link.active {
+      color: #065f46;
+      background-color: rgba(16, 185, 129, 0.12);
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-emerald-700 selection:text-white pb-16 md:pb-0">
+
+  <!-- Sticky Glassmorphic Header (Clean, NO home/building icon in top-left, NO language/profile tabs) -->
+  <header class="sticky top-0 z-40 bg-white/90 backdrop-blur-xl border-b border-slate-200/80 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 sm:h-18 flex items-center justify-between gap-3">
+      <!-- Candidate Identity (Text only, no home icon) -->
+      <a href="#home" class="flex flex-col leading-tight group">
+        <span class="text-base sm:text-lg font-extrabold tracking-tight text-emerald-900 group-hover:text-emerald-700 transition">
+          Dasari Chinna Gangaiah
+        </span>
+        <span class="text-xs font-semibold text-amber-700 te">
+          దాసరి చిన్న గంగయ్య (చిన్న) • Tallapalli Sarpanch • 2026
+        </span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav aria-label="Primary Navigation" class="hidden xl:flex items-center gap-1 text-xs font-bold text-slate-600">
+        <a href="#about" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>About</span>
+          <span class="block text-[10px] text-emerald-700 te">పరిచయం</span>
+        </a>
+        <a href="#works" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>Works &amp; Vision</span>
+          <span class="block text-[10px] text-emerald-700 te">పనులు &amp; విజన్</span>
+        </a>
+        <a href="#culture" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>Cultural Events</span>
+          <span class="block text-[10px] text-emerald-700 te">వేడుకలు</span>
+        </a>
+        <a href="#legacy" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>Next-Gen &amp; Eco</span>
+          <span class="block text-[10px] text-emerald-700 te">భావి తరాలు</span>
+        </a>
+        <a href="#desk" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>Door-to-Door &amp; Desk</span>
+          <span class="block text-[10px] text-emerald-700 te">ఇంటింటికీ సేవ</span>
+        </a>
+        <a href="#qa" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>Why Vote</span>
+          <span class="block text-[10px] text-emerald-700 te">ఎందుకు ఓటు</span>
+        </a>
+        <a href="#contact" class="nav-link px-3 py-2 rounded-xl hover:text-emerald-800 hover:bg-emerald-50 transition text-center leading-tight">
+          <span>Contact</span>
+          <span class="block text-[10px] text-emerald-700 te">సంప్రదించండి</span>
+        </a>
+      </nav>
+
+      <!-- Direct Action Buttons + Mobile Drawer Trigger (No language/profile switcher tabs) -->
+      <div class="flex items-center gap-2">
+        <a href="tel:+919652630901"
+          class="hidden sm:inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-900 font-bold text-xs border border-slate-200 transition">
+          <span>Call 9652630901</span>
+        </a>
+        <a href="https://wa.me/919652630901?text=Namaste%20Dasari%20Chinna%20Gangaiah%20garu,%20we%20support%20your%20vision%20for%20Tallapalli!"
+          target="_blank" rel="noopener noreferrer"
+          class="inline-flex items-center gap-1.5 px-3.5 py-2 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white font-extrabold text-xs shadow-sm transition">
+          <span class="w-2 h-2 rounded-full bg-amber-300"></span>
+          <span>WhatsApp</span>
+        </a>
+
+        <button type="button" id="mobileMenuBtn" aria-label="Toggle Menu" aria-expanded="false"
+          class="xl:hidden p-2.5 rounded-xl bg-slate-100 hover:bg-emerald-50 text-slate-800 border border-slate-200 transition">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobileMenu" class="hidden xl:hidden bg-white/95 backdrop-blur-xl border-t border-slate-200 px-4 py-3 space-y-1 shadow-lg">
+      <a href="#about" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        About Chinna <span class="text-xs text-emerald-700 te ml-1">• పరిచయం</span>
+      </a>
+      <a href="#works" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        Works &amp; 2026 Vision <span class="text-xs text-emerald-700 te ml-1">• చేసిన పనులు &amp; 2026 విజన్</span>
+      </a>
+      <a href="#culture" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        Cultural Events Organised <span class="text-xs text-emerald-700 te ml-1">• సాంస్కృతిక కార్యక్రమాలు</span>
+      </a>
+      <a href="#legacy" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        Next-Gen &amp; Eco-Clean Legacy <span class="text-xs text-emerald-700 te ml-1">• భావి తరాల భవిష్యత్తు</span>
+      </a>
+      <a href="#desk" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        Door-to-Door &amp; Citizen Desk <span class="text-xs text-emerald-700 te ml-1">• ఇంటింటికీ ప్రచారం &amp; ఫిర్యాదుల వేదిక</span>
+      </a>
+      <a href="#qa" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        Why Vote for Chinna? <span class="text-xs text-emerald-700 te ml-1">• ఎందుకు ఓటు వేయాలి?</span>
+      </a>
+      <a href="#contact" class="mobile-nav-item block px-3.5 py-2.5 rounded-xl text-sm font-semibold text-slate-700 hover:bg-emerald-50 hover:text-emerald-800">
+        Contact <span class="text-xs text-emerald-700 te ml-1">• సంప్రదించండి</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- SECTION 1: Hero & Live Poll Countdown -->
+  <section id="home" class="relative overflow-hidden pt-8 pb-16 sm:pt-12 sm:pb-24 bg-gradient-to-br from-emerald-950 via-emerald-900 to-emerald-800 text-white">
+    <div aria-hidden="true" class="pointer-events-none absolute -top-24 -left-24 w-96 h-96 rounded-full bg-emerald-500/20 blur-3xl"></div>
+    <div aria-hidden="true" class="pointer-events-none absolute bottom-0 right-0 w-[28rem] h-[28rem] rounded-full bg-amber-500/15 blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+        <!-- Left Hero Copy & Countdown (English on top, Telugu directly underneath) -->
+        <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+          <div class="inline-flex flex-col sm:flex-row items-center gap-1.5 sm:gap-2 px-4 py-1.5 rounded-2xl sm:rounded-full bg-white/10 border border-white/20 text-amber-300 text-xs sm:text-sm font-bold tracking-wide">
+            <span class="flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-amber-400 animate-pulse"></span>
+              <span>TALLAPALLI SARPANCH ELECTION • NOVEMBER 29, 2026</span>
+            </span>
+            <span class="te text-emerald-100 text-xs">తల్లపల్లి సర్పంచ్ ఎన్నికలు • నవంబర్ 29, 2026</span>
+          </div>
+
+          <!-- English Slogan first, Telugu directly underneath -->
+          <div class="space-y-2">
+            <h1 class="text-2xl sm:text-4xl lg:text-[2.65rem] font-extrabold text-white leading-tight">
+              “Your Trust — The Future of Coming Generations”
+            </h1>
+            <p class="text-xl sm:text-3xl lg:text-4xl font-extrabold text-amber-300 te tracking-tight">
+              “మీ భరోసా — రేపటి భావి తరాల భవిష్యత్తు”
+            </p>
+          </div>
+
+          <!-- English intro followed directly by Telugu translation -->
+          <div class="space-y-2 max-w-2xl mx-auto lg:mx-0">
+            <p class="text-base sm:text-lg text-white/95 leading-relaxed">
+              <strong>Dasari Chinna Gangaiah (Chinna)</strong> — Standing with every household in <strong>Tallapalli</strong> 365 days a year for clean drinking water, durable CC roads, prompt drainage, youth opportunities, and transparent Gram Panchayat governance.
+            </p>
+            <p class="text-sm sm:text-base text-emerald-200 te leading-relaxed">
+              <strong>దాసరి చిన్న గంగయ్య (చిన్న)</strong> — తల్లపల్లి గ్రామ అభివృద్ధి, స్వచ్ఛమైన తాగునీరు, సీసీ రోడ్లు, డ్రైనేజీ, యువత భవిష్యత్తు మరియు పారదర్శక పాలన కోసం నిత్యం మీతో ఉండే మీ ఇంటి మనిషి.
+            </p>
+          </div>
+
+          <!-- Live Election Countdown Timer -->
+          <div class="glass-dark rounded-2xl p-4 sm:p-5 max-w-xl mx-auto lg:mx-0">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between text-xs font-bold uppercase tracking-wider text-amber-300 mb-3 gap-1">
+              <span>Countdown to Polling Day • <span class="te normal-case text-emerald-100">పోలింగ్ రోజుకు కౌంట్‌డౌన్</span></span>
+              <span>Nov 29, 2026 • 7:00 AM</span>
+            </div>
+            <div id="countdownGrid" class="grid grid-cols-4 gap-2.5 sm:gap-3 text-center">
+              <div class="bg-white/10 rounded-xl py-2.5 px-2 border border-white/10">
+                <div id="cd-days" class="text-xl sm:text-3xl font-extrabold text-white">00</div>
+                <div class="text-[11px] uppercase tracking-wider text-emerald-200 font-semibold">Days <span class="te block text-[10px]">రోజులు</span></div>
+              </div>
+              <div class="bg-white/10 rounded-xl py-2.5 px-2 border border-white/10">
+                <div id="cd-hours" class="text-xl sm:text-3xl font-extrabold text-white">00</div>
+                <div class="text-[11px] uppercase tracking-wider text-emerald-200 font-semibold">Hours <span class="te block text-[10px]">గంటలు</span></div>
+              </div>
+              <div class="bg-white/10 rounded-xl py-2.5 px-2 border border-white/10">
+                <div id="cd-mins" class="text-xl sm:text-3xl font-extrabold text-white">00</div>
+                <div class="text-[11px] uppercase tracking-wider text-emerald-200 font-semibold">Mins <span class="te block text-[10px]">నిమిషాలు</span></div>
+              </div>
+              <div class="bg-white/10 rounded-xl py-2.5 px-2 border border-white/10">
+                <div id="cd-secs" class="text-xl sm:text-3xl font-extrabold text-amber-300">00</div>
+                <div class="text-[11px] uppercase tracking-wider text-emerald-200 font-semibold">Secs <span class="te block text-[10px]">సెకన్లు</span></div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Primary CTA Buttons -->
+          <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3.5 pt-1">
+            <a href="#works"
+              class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm sm:text-base shadow-lg shadow-amber-950/30 transition flex flex-col items-center justify-center">
+              <span class="flex items-center gap-2">
+                <span>Explore Works &amp; 2026 Vision</span>
+                <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+              <span class="text-xs font-bold text-slate-900 te">చేసిన పనులు &amp; 2026 విజన్ చూడండి</span>
+            </a>
+            <a href="https://wa.me/919652630901?text=Namaste%20Dasari%20Chinna%20Gangaiah%20garu,%20we%20support%20your%20vision%20for%20Tallapalli!"
+              target="_blank" rel="noopener noreferrer"
+              class="w-full sm:w-auto px-6 py-3.5 rounded-2xl bg-white/12 hover:bg-white/20 text-white border border-white/25 font-bold text-sm sm:text-base transition flex flex-col items-center justify-center">
+              <span class="flex items-center gap-2">
+                <span class="w-2.5 h-2.5 rounded-full bg-emerald-400"></span>
+                <span>Direct WhatsApp: 9652630901</span>
+              </span>
+              <span class="text-xs font-medium text-emerald-200 te">నేరుగా వాట్సాప్‌లో సంప్రదించండి</span>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Hero Watercolor Portrait (Clean glass frame, NO green overlay, NO upload button) -->
+      
+            </div>
+            <!-- Clean English & Telugu caption strictly BELOW the image frame -->
+            <div class="pt-4 pb-1 text-center">
+              <h2 class="text-lg sm:text-xl font-extrabold text-emerald-950">
+                Dasari Chinna Gangaiah (Chinna)
+              </h2>
+              <p class="text-sm font-bold text-emerald-800 te">
+                దాసరి చిన్న గంగయ్య (చిన్న)
+              </p>
+              <p class="text-xs font-bold text-amber-700 mt-1">
+                Poll Date: Nov 29, 2026 • Tallapalli <span class="te text-slate-600">(తల్లపల్లి)</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 2: About Chinna — Biography & Values -->
+  <section id="about" class="py-16 sm:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-center">
+        
+      
+
+        <!-- Right Biography & 3 Trust Pillars (English first, Telugu directly underneath) -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex flex-col sm:flex-row sm:items-center gap-1 px-3.5 py-1 rounded-full bg-emerald-100/80 text-emerald-900 text-xs font-extrabold uppercase tracking-wider">
+            <span>About Chinna • <span class="te normal-case">పరిచయం</span></span>
+          </div>
+
+          <div>
+            <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight leading-tight">
+              A Leader Who Stays With People &amp; Works Every Day
+            </h2>
+            <p class="te text-emerald-800 font-bold text-lg sm:text-2xl mt-1">
+              నిత్యం ప్రజలతో ఉంటూ, ప్రజల కోసం పనిచేసే నాయకుడు
+            </p>
+          </div>
+
+          <div class="glass-card rounded-2xl p-5 sm:p-6 border-l-4 border-l-emerald-700 space-y-4">
+            <div>
+              <p class="text-slate-800 text-base sm:text-lg leading-relaxed font-semibold">
+                “He is a person who stays with people and works for people every day — unlike leaders who disappear and don't care about anyone after winning.”
+              </p>
+              <p class="te text-emerald-900 text-sm sm:text-base font-semibold mt-1.5">
+                “గెలిచిన తర్వాత పట్టించుకోకుండా మాయమయ్యే నాయకుల్లా కాకుండా, నిత్యం తల్లపల్లి ప్రజలతో ఉంటూ ప్రతి ఇంటి కష్టసుఖాల్లో అండగా నిలబడి పనిచేసే వ్యక్తి దాసరి చిన్న గంగయ్య (చిన్న).”
+              </p>
+            </div>
+
+            <div class="pt-2 border-t border-slate-200/70">
+              <p class="text-slate-600 text-sm sm:text-base leading-relaxed">
+                Born and rooted in Tallapalli, Dasari Chinna Gangaiah believes that leadership is not a post—it is a daily responsibility. Before asking for a single vote, he has stood beside families for water pipelines, drainage repairs, CC roads, pension assistance, and village unity.
+              </p>
+              <p class="te text-slate-700 text-xs sm:text-sm mt-1.5">
+                తల్లపల్లి మట్టిలోనే పుట్టి పెరిగిన దాసరి చిన్న గంగయ్య గారి దృష్టిలో నాయకత్వం అంటే పదవి కాదు — ప్రతిరోజూ ప్రజలకు అండగా నిలబడే బాధ్యత. ఒక్క ఓటు అడగకముందే తాగునీరు, డ్రైనేజీ, సీసీ రోడ్లు, పెన్షన్లు మరియు గ్రామ ఐక్యత కోసం ముందుండి పనిచేశారు.
+              </p>
+            </div>
+          </div>
+
+          <!-- 3 Trust Pillars -->
+          <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 pt-1">
+            <div class="tilt-card glass-card rounded-2xl p-4 sm:p-5">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-extrabold text-lg mb-3">
+                01
+              </div>
+              <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Always Accessible in Tallapalli</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">గ్రామంలోనే నిత్యం అందుబాటులో</p>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                Available right here in the village every day—no middlemen or closed doors.
+              </p>
+              <p class="text-[11px] text-slate-600 te mt-1">
+                మధ్యవర్తులు లేకుండా ప్రతిరోజూ గ్రామంలోనే ప్రజలకు అందుబాటులో ఉంటారు.
+              </p>
+            </div>
+
+            <div class="tilt-card glass-card rounded-2xl p-4 sm:p-5">
+              <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-800 flex items-center justify-center font-extrabold text-lg mb-3">
+                02
+              </div>
+              <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Action Before &amp; After Elections</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">ఎన్నికలకు ముందే పని చేసి నిరూపించారు</p>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                Proven grassroots work already delivered, backed by a clear 5-year roadmap.
+              </p>
+              <p class="text-[11px] text-slate-600 te mt-1">
+                ఇప్పటికే చేసిన అభివృద్ధి పనులతో పాటు రాబోయే 5 ఏళ్లకు స్పష్టమైన ప్రణాళిక ఉంది.
+              </p>
+            </div>
+
+            <div class="tilt-card glass-card rounded-2xl p-4 sm:p-5">
+              <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-800 flex items-center justify-center font-extrabold text-lg mb-3">
+                03
+              </div>
+              <h3 class="font-extrabold text-slate-900 text-sm sm:text-base">Accountable to Every Household</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">ప్రతి కుటుంబానికి జవాబుదారీతనం</p>
+              <p class="text-xs text-slate-600 mt-1.5 leading-relaxed">
+                Open Gram Sabha fund updates and fair welfare delivery for every eligible family.
+              </p>
+              <p class="text-[11px] text-slate-600 te mt-1">
+                గ్రామ సభల ద్వారా నిధుల పారదర్శకత మరియు అర్హులందరికీ సంక్షేమ ఫలాలు అందిస్తారు.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 3: Proven Work & 2026 Vision in Tallapalli (NO Ward Section) -->
+  <section id="works" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto space-y-2 mb-10">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-extrabold uppercase tracking-wider">
+          Proven Work &amp; 2026 Vision • <span class="te normal-case">చేసిన పనులు &amp; 2026 విజన్</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Grassroots Action &amp; 2026 Sarpanch Vision for Tallapalli
+        </h2>
+        <p class="te text-emerald-800 font-bold text-lg sm:text-2xl">
+          తల్లపల్లి అభివృద్ధిలో చేసిన పనులు &amp; 2026 భవిష్యత్ ప్రణాళిక
+        </p>
+      </div>
+
+      <!-- Prominent 2026 Sarpanch Vision Roadmap Banner -->
+      <div class="mb-10 rounded-3xl bg-gradient-to-r from-emerald-900 via-emerald-800 to-emerald-900 text-white p-6 sm:p-8 shadow-xl border border-emerald-700/60">
+        <div class="flex flex-col lg:flex-row lg:items-center justify-between gap-6">
+          <div class="space-y-3 max-w-3xl">
+            <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-extrabold uppercase tracking-wider">
+              <span>2026–2031 Sarpanch Vision Roadmap • <span class="te normal-case">2026–2031 సర్పంచ్ విజన్ ప్రణాళిక</span></span>
+            </div>
+            <div>
+              <h3 class="text-xl sm:text-2xl font-extrabold text-white">
+                Building a Model, Self-Reliant &amp; Clean Tallapalli
+              </h3>
+              <p class="te text-amber-300 font-bold text-base sm:text-xl mt-0.5">
+                ఆదర్శవంతమైన, స్వచ్ఛమైన మరియు అభివృద్ధి చెందిన తల్లపల్లి నిర్మాణం
+              </p>
+            </div>
+            <div class="space-y-1.5">
+              <p class="text-sm sm:text-base text-white/95 leading-relaxed">
+                Every rupee sanctioned to Tallapalli Gram Panchayat will be tracked transparently in open Gram Sabhas—completing 100% CC roads, covered underground drains, daily tap water supply, floodlit youth grounds, and doorstep welfare schemes.
+              </p>
+              <p class="te text-xs sm:text-sm text-emerald-200 leading-relaxed">
+                గ్రామ పంచాయతీకి వచ్చే ప్రతి రూపాయిని గ్రామ సభల ద్వారా పారదర్శకంగా ఖర్చు చేస్తూ — 100% సీసీ రోడ్లు, భూగర్భ డ్రైనేజీ, ప్రతి ఇంటికి తాగునీరు, యువత క్రీడా మైదానం మరియు ఇంటింటికీ సంక్షేమ పథకాలు అందించడమే మా 2026 విజన్.
+              </p>
+            </div>
+          </div>
+          <div class="shrink-0">
+            <a href="#desk" class="inline-flex flex-col items-center justify-center px-5 py-3.5 rounded-2xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm shadow-md transition">
+              <span>Share Your Suggestion →</span>
+              <span class="text-[11px] font-bold te">మీ సలహా తెలియజేయండి</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div role="tablist" aria-label="Filter Development Works" class="flex flex-wrap items-center justify-center gap-2 mb-8">
+        <button type="button" data-filter="all" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-emerald-800 text-white shadow-sm transition">
+          All Works &amp; Vision (5) <span class="te text-[11px] ml-1">• అన్నీ</span>
+        </button>
+        <button type="button" data-filter="infrastructure" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+          Infrastructure <span class="te text-[11px] ml-1">• మౌలిక వసతులు</span>
+        </button>
+        <button type="button" data-filter="water" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+          Water &amp; Sanitation <span class="te text-[11px] ml-1">• నీరు &amp; పారిశుధ్యం</span>
+        </button>
+        <button type="button" data-filter="youth" class="work-filter-btn px-4 py-2 rounded-xl text-xs sm:text-sm font-bold bg-slate-100 text-slate-700 hover:bg-emerald-50 transition">
+          Youth &amp; Welfare <span class="te text-[11px] ml-1">• యువత &amp; సంక్షేమం</span>
+        </button>
+      </div>
+
+      <!-- 5 Distinct Works + 2026 Vision Grid -->
+      <div id="worksGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        
+        <!-- Card 1: Underground & CC Drainage Systems -->
+        <article data-category="water" class="work-card tilt-card glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-200/90">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold">Water &amp; Sanitation</span>
+              <span class="text-xs font-bold text-slate-400">#01</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Underground &amp; CC Drainage Systems</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">భూగర్భ &amp; సీసీ డ్రైనేజీ వ్యవస్థ</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200/70 space-y-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">Work Done • <span class="te normal-case">చేసిన పని</span></span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Cleared clogged drains, repaired broken slabs, and resolved monsoon water stagnation across residential lanes in Tallapalli.
+              </p>
+              <p class="text-xs text-slate-600 te">
+                తల్లపల్లి నివాస వీధుల్లో పేరుకుపోయిన డ్రైనేజీ పూడికను తొలగించి, వర్షాకాలపు నీటి నిల్వ సమస్యను పరిష్కరించారు.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-amber-200/80 bg-amber-50/70 rounded-2xl p-3.5 space-y-1.5">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 block">2026 Vision • <span class="te normal-case">2026 లక్ష్యం</span></span>
+            <p class="text-xs sm:text-sm font-semibold text-slate-900 leading-relaxed">
+              100% covered, clog-free underground and CC drainage across every lane with scheduled monthly desilting.
+            </p>
+            <p class="text-xs text-emerald-900 font-medium te">
+              ప్రతి వీధిలో 100% కవర్డ్ భూగర్భ &amp; సీసీ డ్రైనేజీ నిర్మాణం మరియు ప్రతి నెలా క్రమం తప్పకుండా శుభ్రపరిచే వ్యవస్థ.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 2: Internal CC Roads & Street Connectivity -->
+        <article data-category="infrastructure" class="work-card tilt-card glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-200/90">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-extrabold">Infrastructure</span>
+              <span class="text-xs font-bold text-slate-400">#02</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Internal CC Roads &amp; Street Connectivity</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">అంతర్గత సీసీ రోడ్లు &amp; వీధుల అనుసంధానం</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200/70 space-y-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">Work Done • <span class="te normal-case">చేసిన పని</span></span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Levelled muddy lanes, filled dangerous potholes, and coordinated CC road laying for safe daily travel of elders and school children.
+              </p>
+              <p class="text-xs text-slate-600 te">
+                మట్టి రోడ్లను చదును చేసి, గుంతలను పూడ్చి పెద్దలు మరియు పాఠశాల విద్యార్థుల సురక్షిత ప్రయాణానికి సీసీ రోడ్ల పనులు చేపట్టారు.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-amber-200/80 bg-amber-50/70 rounded-2xl p-3.5 space-y-1.5">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 block">2026 Vision • <span class="te normal-case">2026 లక్ష్యం</span></span>
+            <p class="text-xs sm:text-sm font-semibold text-slate-900 leading-relaxed">
+              All-weather CC roads connecting every colony, temple street, and agricultural farm track in Tallapalli.
+            </p>
+            <p class="text-xs text-emerald-900 font-medium te">
+              తల్లపల్లిలోని ప్రతి కాలనీ, ఆలయ వీధి మరియు వ్యవసాయ పొలాల దారులను కలుపుతూ నాణ్యమైన సీసీ రోడ్ల నిర్మాణం.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 3: Drinking Water Pipelines & Overhead Tank Supply -->
+        <article data-category="water" class="work-card tilt-card glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-200/90">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold">Water &amp; Sanitation</span>
+              <span class="text-xs font-bold text-slate-400">#03</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Drinking Water Pipelines &amp; Overhead Tank Supply</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">తాగునీటి పైప్‌లైన్లు &amp; ట్యాంక్ సరఫరా</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200/70 space-y-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">Work Done • <span class="te normal-case">చేసిన పని</span></span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Fixed damaged water valves, extended pipeline connections to tail-end houses, and ensured regular overhead tank cleaning.
+              </p>
+              <p class="text-xs text-slate-600 te">
+                పాడైన వాల్వ్‌లను మరమ్మతు చేసి, చివరి ఇళ్ల వరకు పైప్‌లైన్ కనెక్షన్లు విస్తరించి ఓవర్‌హెడ్ ట్యాంక్ శుభ్రతను పర్యవేక్షించారు.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-amber-200/80 bg-amber-50/70 rounded-2xl p-3.5 space-y-1.5">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 block">2026 Vision • <span class="te normal-case">2026 లక్ష్యం</span></span>
+            <p class="text-xs sm:text-sm font-semibold text-slate-900 leading-relaxed">
+              Daily purified tap water pressure to every single household—including newly built outer colonies.
+            </p>
+            <p class="text-xs text-emerald-900 font-medium te">
+              కొత్త కాలనీలతో సహా తల్లపల్లిలోని ప్రతి ఇంటికీ ప్రతిరోజూ శుద్ధమైన తాగునీరు సరిపడా పీడనంతో అందేలా చేయడం.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 4: Youth Sports Ground & Kabaddi/Cricket Arena -->
+        <article data-category="youth" class="work-card tilt-card glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-200/90">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold">Youth &amp; Welfare</span>
+              <span class="text-xs font-bold text-slate-400">#04</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Youth Sports Ground &amp; Kabaddi/Cricket Arena</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">యువజన క్రీడా మైదానం &amp; కబడ్డీ/క్రికెట్ వేదిక</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200/70 space-y-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">Work Done • <span class="te normal-case">చేసిన పని</span></span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Levelled the village playground, provided sports kits, and organized cricket and kabaddi tournaments for Tallapalli youth.
+              </p>
+              <p class="text-xs text-slate-600 te">
+                గ్రామ క్రీడా మైదానాన్ని చదును చేయించి, క్రీడా కిట్లు అందించి తల్లపల్లి యువత కోసం క్రికెట్ మరియు కబడ్డీ టోర్నమెంట్లు నిర్వహించారు.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-amber-200/80 bg-amber-50/70 rounded-2xl p-3.5 space-y-1.5">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 block">2026 Vision • <span class="te normal-case">2026 లక్ష్యం</span></span>
+            <p class="text-xs sm:text-sm font-semibold text-slate-900 leading-relaxed">
+              Floodlit multi-sport ground, fitness track, and annual inter-village tournaments to nurture young talent.
+            </p>
+            <p class="text-xs text-emerald-900 font-medium te">
+              ఫ్లడ్‌లైట్లతో కూడిన క్రీడా మైదానం, ఫిట్‌నెస్ ట్రాక్ మరియు యువ క్రీడాకారులను ప్రోత్సహించేందుకు వార్షిక టోర్నమెంట్లు.
+            </p>
+          </div>
+        </article>
+
+        <!-- Card 5: Government Welfare, Pensions & Farmer Support -->
+        <article data-category="youth" class="work-card tilt-card glass-card rounded-3xl p-6 flex flex-col justify-between border border-slate-200/90 md:col-span-2 lg:col-span-1">
+          <div class="space-y-4">
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold">Youth &amp; Welfare</span>
+              <span class="text-xs font-bold text-slate-400">#05</span>
+            </div>
+            <div>
+              <h3 class="text-lg font-extrabold text-slate-900">Government Welfare, Pensions &amp; Farmer Support</h3>
+              <p class="text-xs font-bold text-emerald-800 te mt-0.5">ప్రభుత్వ సంక్షేమం, పెన్షన్లు &amp; రైతు భరోసా</p>
+            </div>
+            <div class="bg-slate-50 rounded-2xl p-3.5 border border-slate-200/70 space-y-1.5">
+              <span class="text-[11px] font-extrabold uppercase tracking-wider text-slate-500 block">Work Done • <span class="te normal-case">చేసిన పని</span></span>
+              <p class="text-xs sm:text-sm text-slate-700 leading-relaxed">
+                Assisted senior citizens, widows, and farmers with pension documentation, ration cards, and scheme applications without fees.
+              </p>
+              <p class="text-xs text-slate-600 te">
+                వృద్ధులు, వితంతువులు మరియు రైతులకు పెన్షన్ పత్రాలు, రేషన్ కార్డులు మరియు ప్రభుత్వ పథకాల దరఖాస్తుల్లో ఉచితంగా సహాయం అందించారు.
+              </p>
+            </div>
+          </div>
+          <div class="mt-4 pt-4 border-t border-amber-200/80 bg-amber-50/70 rounded-2xl p-3.5 space-y-1.5">
+            <span class="text-[11px] font-extrabold uppercase tracking-wider text-amber-800 block">2026 Vision • <span class="te normal-case">2026 లక్ష్యం</span></span>
+            <p class="text-xs sm:text-sm font-semibold text-slate-900 leading-relaxed">
+              Zero-middleman doorstep delivery of pensions, Indiramma housing, and Rythu welfare benefits for every eligible family.
+            </p>
+            <p class="text-xs text-emerald-900 font-medium te">
+              మధ్యవర్తుల ప్రమేయం లేకుండా ప్రతి అర్హత గల కుటుంబానికి పెన్షన్లు, ఇందిరమ్మ ఇళ్లు మరియు రైతు సంక్షేమ ఫలాలు నేరుగా అందించడం.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 4: Cultural Events Organised -->
+  <section id="culture" class="py-16 sm:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      <div class="rounded-3xl bg-gradient-to-br from-emerald-900 via-emerald-800 to-teal-900 text-white p-6 sm:p-10 lg:p-12 shadow-2xl relative overflow-hidden">
+        <div aria-hidden="true" class="pointer-events-none absolute -right-16 -bottom-16 w-72 h-72 rounded-full bg-amber-400/20 blur-3xl"></div>
+
+        <div class="relative grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          <div class="lg:col-span-8 space-y-4">
+            <span class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-400/20 text-amber-300 text-xs font-extrabold uppercase tracking-wider">
+              <span>Cultural Events Organised • <span class="te normal-case">సాంస్కృతిక కార్యక్రమాలు</span></span>
+            </span>
+
+            <div>
+              <h2 class="text-2xl sm:text-4xl font-extrabold tracking-tight text-white">
+                Celebrating Tallapalli's Traditions, Festivals &amp; Community Spirit
+              </h2>
+              <p class="te text-amber-300 font-bold text-lg sm:text-2xl mt-1">
+                తల్లపల్లి సంస్కృతి, పండుగలు &amp; గ్రామ ఐక్యతకు వేదిక
+              </p>
+            </div>
+
+            <div class="space-y-2">
+              <p class="text-sm sm:text-base text-white/95 leading-relaxed">
+                From grand <strong>Bathukamma</strong> and <strong>Ganesh Navaratri</strong> celebrations to village jatara festivities, youth sports tournaments, and community gatherings, Dasari Chinna Gangaiah actively organizes and supports cultural events that keep Tallapalli united as one family.
+              </p>
+              <p class="te text-xs sm:text-sm text-emerald-200 leading-relaxed">
+                బతుకమ్మ, గణేష్ నవరాత్రులు, గ్రామ జాతరలు, యువజన క్రీడా పోటీలు మరియు సాంస్కృతిక కార్యక్రమాలను నిర్వహిస్తూ తల్లపల్లి ప్రజలందరినీ ఒకే కుటుంబంలా ఐక్యంగా ఉంచుతున్నారు.
+              </p>
+            </div>
+
+            <div class="flex flex-wrap gap-2 pt-1 text-xs font-bold">
+              <span class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/15">Bathukamma <span class="te text-amber-200">• బతుకమ్మ</span></span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/15">Ganesh Navaratri <span class="te text-amber-200">• గణేష్ నవరాత్రులు</span></span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/15">Youth Sports Fests <span class="te text-amber-200">• క్రీడా పోటీలు</span></span>
+              <span class="px-3 py-1.5 rounded-xl bg-white/10 border border-white/15">Village Gatherings <span class="te text-amber-200">• గ్రామ వేడుకలు</span></span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col items-stretch sm:items-center lg:items-end justify-center">
+            <div class="w-full max-w-sm bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-6 text-center space-y-4">
+              <div class="w-14 h-14 mx-auto rounded-2xl bg-amber-400 text-slate-950 flex items-center justify-center shadow-lg">
+                <svg class="w-7 h-7" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+              </div>
+              <div>
+                <h3 class="font-extrabold text-white text-base sm:text-lg">Event Photo Gallery</h3>
+                <p class="text-xs font-bold text-amber-300 te">కార్యక్రమాల ఫోటో ఆల్బమ్</p>
+                <p class="text-xs text-emerald-100 mt-1.5">View real photos from cultural events &amp; community celebrations in Tallapalli.</p>
+                <p class="text-[11px] text-emerald-200 te mt-0.5">తల్లపల్లిలో నిర్వహించిన సాంస్కృతిక వేడుకల ఫోటోలను చూడండి.</p>
+              </div>
+              <a
+                href="https://photos.app.goo.gl/ypNLDN9keJwjxEKRA"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="w-full py-3.5 px-5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm shadow-lg transition flex flex-col items-center justify-center">
+                <span class="flex items-center gap-2">
+                  <span>View Cultural Events Album</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                  </svg>
+                </span>
+                <span class="text-[11px] font-bold te">ఫోటో గ్యాలరీ తెరవండి</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 5: Next Generation & Eco-Clean Legacy (Strictly 4 pillars, NO Digital Library, NO Haritha Tallapalli) -->
+  <section id="legacy" class="py-16 sm:py-24 bg-white border-y border-slate-200/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      <div class="text-center max-w-3xl mx-auto space-y-2 mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-extrabold uppercase tracking-wider">
+          Next Generation &amp; Eco-Clean Legacy • <span class="te normal-case">భావి తరాల భవిష్యత్తు</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Investing in Tallapalli's Youth, Solar Energy &amp; Water Resources
+        </h2>
+        <p class="te text-emerald-800 font-bold text-lg sm:text-2xl">
+          యువత భవిష్యత్తు, సోలార్ వెలుగులు &amp; నీటి వనరుల సంరక్షణ
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Pillar 1: Youth Skill & Career Mentorship -->
+        <div class="tilt-card glass-card rounded-3xl p-6 border border-slate-200/90 space-y-2.5">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-800 text-amber-300 flex items-center justify-center font-extrabold text-lg shadow-sm">
+            01
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Youth Skill &amp; Career Mentorship</h3>
+          <p class="text-xs font-bold text-emerald-800 te">యువత నైపుణ్యం &amp; ఉద్యోగ మార్గదర్శనం</p>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Competitive exam guidance camps, ITI/polytechnic career counseling, and job readiness workshops so Tallapalli youth build strong careers.
+          </p>
+          <p class="text-xs text-slate-600 te">
+            పోటీ పరీక్షల మార్గదర్శక శిబిరాలు, ఐటీఐ/పాలిటెక్నిక్ కౌన్సెలింగ్ మరియు ఉద్యోగ నైపుణ్య శిక్షణ ద్వారా యువతకు బంగారు భవిష్యత్తు.
+          </p>
+        </div>
+
+        <!-- Pillar 2: Village Sports & Fitness Complex -->
+        <div class="tilt-card glass-card rounded-3xl p-6 border border-slate-200/90 space-y-2.5">
+          <div class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center font-extrabold text-lg shadow-sm">
+            02
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Village Sports &amp; Fitness Complex</h3>
+          <p class="text-xs font-bold text-emerald-800 te">గ్రామ క్రీడా &amp; ఫిట్‌నెస్ సముదాయం</p>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Dedicated coaching support, quality sports kits, and youth athletics facilities for kabaddi, cricket, volleyball, and running.
+          </p>
+          <p class="text-xs text-slate-600 te">
+            కబడ్డీ, క్రికెట్, వాలీబాల్ మరియు అథ్లెటిక్స్ కోసం నాణ్యమైన క్రీడా కిట్లు, శిక్షణ సహకారం మరియు ఫిట్‌నెస్ సదుపాయాలు.
+          </p>
+        </div>
+
+        <!-- Pillar 3: 100% Solar Streetlights -->
+        <div class="tilt-card glass-card rounded-3xl p-6 border border-slate-200/90 space-y-2.5">
+          <div class="w-12 h-12 rounded-2xl bg-emerald-800 text-amber-300 flex items-center justify-center font-extrabold text-lg shadow-sm">
+            03
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">100% Solar Streetlights</h3>
+          <p class="text-xs font-bold text-emerald-800 te">100% సోలార్ వీధి దీపాలు</p>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Zero-bill, reliable solar LED lighting across every Tallapalli street and junction for night safety and lower Panchayat electricity costs.
+          </p>
+          <p class="text-xs text-slate-600 te">
+            రాత్రివేళల్లో భద్రత మరియు పంచాయతీ కరెంట్ బిల్లుల ఆదా కోసం తల్లపల్లిలోని ప్రతి వీధిలో 100% సోలార్ ఎల్‌ఈడీ దీపాల ఏర్పాటు.
+          </p>
+        </div>
+
+        <!-- Pillar 4: Tank Desilting & Groundwater Recharge -->
+        <div class="tilt-card glass-card rounded-3xl p-6 border border-slate-200/90 space-y-2.5">
+          <div class="w-12 h-12 rounded-2xl bg-amber-600 text-white flex items-center justify-center font-extrabold text-lg shadow-sm">
+            04
+          </div>
+          <h3 class="text-lg font-extrabold text-slate-900">Tank Desilting &amp; Groundwater Recharge</h3>
+          <p class="text-xs font-bold text-emerald-800 te">చెరువుల పూడికతీత &amp; భూగర్భ జలాల పెంపు</p>
+          <p class="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            Systematic tank desilting and rainwater recharge pits to strengthen borewells for Tallapalli farmers and secure clean drinking water.
+          </p>
+          <p class="text-xs text-slate-600 te">
+            రైతుల బోరుబావుల్లో నీటి మట్టం పెంచడానికి చెరువుల పూడికతీత మరియు ఇంకుడు గుంతల నిర్మాణంతో స్వచ్ఛమైన నీటి వనరుల సంరక్షణ.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 6: Door-to-Door Janasampark & Citizen Desk -->
+  <section id="desk" class="py-16 sm:py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      <div class="text-center max-w-3xl mx-auto space-y-2 mb-12">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-extrabold uppercase tracking-wider">
+          Door-to-Door Janasampark &amp; Citizen Desk • <span class="te normal-case">ఇంటింటికీ ప్రచారం &amp; ప్రజా వేదిక</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Invite Chinna to Your Doorstep or Log a Village Issue
+        </h2>
+        <p class="te text-emerald-800 font-bold text-lg sm:text-2xl">
+          మీ ఇంటికి ఆహ్వానించండి లేదా మీ వార్డు సమస్యను నమోదు చేయండి
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+        
+        <!-- Left Column: Door-to-Door Janasampark & Home Visit Request Form -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-200/90 space-y-5">
+          <div class="space-y-1.5">
+            <span class="inline-block px-3 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-extrabold">
+              Door-to-Door Janasampark • <span class="te">ఇంటింటికీ ప్రచారం</span>
+            </span>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">Request a Home Visit</h3>
+            <p class="text-sm font-bold text-emerald-800 te">మీ ఇంటికి ఆహ్వానించండి</p>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Invite Dasari Chinna Gangaiah to visit your home or street in Tallapalli for family blessings, elder pension help, or local discussions.
+            </p>
+            <p class="text-xs text-slate-600 te">
+              కుటుంబ ఆశీర్వాదం, పెద్దల పెన్షన్ సహాయం లేదా స్థానిక సమస్యల చర్చ కోసం దాసరి చిన్న గంగయ్య గారిని మీ ఇంటికి ఆహ్వానించండి.
+            </p>
+          </div>
+
+          <form id="visitForm" class="space-y-4">
+            <div>
+              <label for="visitName" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                Your Name • <span class="te normal-case text-emerald-800">మీ పేరు</span> *
+              </label>
+              <input id="visitName" type="text" required placeholder="Enter your full name / మీ పూర్తి పేరు"
+                class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600" />
+            </div>
+
+            <div>
+              <label for="visitWard" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                Ward / Street / Landmark • <span class="te normal-case text-emerald-800">వీధి / కాలనీ పేరు</span> *
+              </label>
+              <input id="visitWard" type="text" required placeholder="e.g., Main Road / Temple Street, Tallapalli"
+                class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600" />
+            </div>
+
+            <div>
+              <label for="visitPurpose" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                Purpose of Visit • <span class="te normal-case text-emerald-800">సందర్శన ఉద్దేశ్యం</span> *
+              </label>
+              <select id="visitPurpose"
+                class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600 focus:border-emerald-600">
+                <option value="Campaign Meet">Campaign Meet / కుటుంబ ఆశీర్వాద భేటీ</option>
+                <option value="Elder & Pension Help">Elder &amp; Pension Help / పెద్దల పెన్షన్ సహాయం</option>
+                <option value="Local Issue">Local Issue / స్థానిక సమస్య పరిశీలన</option>
+                <option value="Community Invite">Community Invite / కార్యక్రమ ఆహ్వానం</option>
+              </select>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-1">
+              <button type="submit"
+                class="flex-1 py-3.5 px-5 rounded-xl bg-emerald-800 hover:bg-emerald-700 text-white font-extrabold text-sm shadow-md transition flex flex-col items-center justify-center">
+                <span>Send Visit Request via WhatsApp</span>
+                <span class="text-[11px] font-medium text-emerald-200 te">వాట్సాప్ ద్వారా ఆహ్వానం పంపండి</span>
+              </button>
+              <button type="button" id="copyVisitBtn"
+                class="py-3.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 transition">
+                Copy Message
+              </button>
+            </div>
+          </form>
+
+          <div id="visitFeedback" class="hidden rounded-2xl bg-emerald-50 border border-emerald-200 p-4 text-xs sm:text-sm text-emerald-900 font-medium"></div>
+        </div>
+
+        <!-- Right Column: Raise a Citizen Complaint Desk (Generates TLP-2026-XXXX) -->
+        <div class="glass-card rounded-3xl p-6 sm:p-8 border border-slate-200/90 space-y-5">
+          <div class="space-y-1.5">
+            <span class="inline-block px-3 py-1 rounded-full bg-amber-100 text-amber-800 text-xs font-extrabold">
+              Citizen Grievance &amp; Tracking Desk • <span class="te">ప్రజా ఫిర్యాదుల వేదిక</span>
+            </span>
+            <h3 class="text-xl sm:text-2xl font-extrabold text-slate-900">Raise a Citizen Complaint</h3>
+            <p class="text-sm font-bold text-emerald-800 te">మీ సమస్యను తెలియజేయండి</p>
+            <p class="text-xs sm:text-sm text-slate-600">
+              Report any water, drainage, streetlight, road, or welfare issue in Tallapalli to generate an instant tracking ID (<code>TLP-2026-XXXX</code>).
+            </p>
+            <p class="text-xs text-slate-600 te">
+              తాగునీరు, డ్రైనేజీ, వీధి దీపాలు, రోడ్లు లేదా సంక్షేమ సమస్యలను తక్షణ ట్రాకింగ్ ఐడీతో నేరుగా పంపండి.
+            </p>
+          </div>
+
+          <form id="complaintForm" class="space-y-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="compName" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  Name • <span class="te normal-case text-emerald-800">పేరు</span> *
+                </label>
+                <input id="compName" type="text" required placeholder="Your name / మీ పేరు"
+                  class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              </div>
+              <div>
+                <label for="compPhone" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  Phone • <span class="te normal-case text-emerald-800">ఫోన్ నంబర్</span> *
+                </label>
+                <input id="compPhone" type="tel" required placeholder="10-digit mobile number"
+                  class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <label for="compWard" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  Ward / Street • <span class="te normal-case text-emerald-800">వీధి / కాలనీ</span> *
+                </label>
+                <input id="compWard" type="text" required placeholder="Street or Colony name"
+                  class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600" />
+              </div>
+              <div>
+                <label for="compCategory" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                  Category • <span class="te normal-case text-emerald-800">విభాగం</span> *
+                </label>
+                <select id="compCategory"
+                  class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600">
+                  <option value="Water">Water / తాగునీరు</option>
+                  <option value="Drainage">Drainage / డ్రైనేజీ</option>
+                  <option value="Streetlight">Streetlight / వీధి దీపాలు</option>
+                  <option value="Road">Road / రోడ్డు మరమ్మతు</option>
+                  <option value="Welfare">Welfare / పెన్షన్ &amp; సంక్షేమం</option>
+                </select>
+              </div>
+            </div>
+
+            <div>
+              <label for="compDesc" class="block text-xs font-bold uppercase tracking-wider text-slate-700 mb-1.5">
+                Issue Description • <span class="te normal-case text-emerald-800">సమస్య వివరాలు</span> *
+              </label>
+              <textarea id="compDesc" rows="2" required placeholder="Briefly describe the issue and location / సమస్య వివరాలు రాయండి..."
+                class="w-full px-4 py-3 rounded-xl bg-white border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-600"></textarea>
+            </div>
+
+            <div class="flex flex-col sm:flex-row gap-3 pt-1">
+              <button type="submit"
+                class="flex-1 py-3.5 px-5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm shadow-md transition flex flex-col items-center justify-center">
+                <span>Generate Tracking ID &amp; Send WhatsApp</span>
+                <span class="text-[11px] font-bold te">ట్రాకింగ్ ఐడీతో ఫిర్యాదు పంపండి</span>
+              </button>
+              <button type="button" id="copyCompBtn"
+                class="py-3.5 px-4 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-xs sm:text-sm border border-slate-300 transition">
+                Copy Details
+              </button>
+            </div>
+          </form>
+
+          <div id="compFeedback" class="hidden rounded-2xl bg-amber-50 border border-amber-300 p-4 text-xs sm:text-sm text-slate-900 space-y-1.5"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 7: Why Vote for Chinna? — Voter Q&A Accordion -->
+  <section id="qa" class="py-16 sm:py-24 bg-white border-t border-slate-200/80">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 reveal">
+      <div class="text-center space-y-2 mb-10">
+        <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-900 text-xs font-extrabold uppercase tracking-wider">
+          Voter Guide • <span class="te normal-case">ఎందుకు ఓటు వేయాలి?</span>
+        </span>
+        <h2 class="text-2xl sm:text-4xl font-extrabold text-slate-900 tracking-tight">
+          Why Should We Vote for Dasari Chinna Gangaiah?
+        </h2>
+        <p class="te text-emerald-800 font-bold text-lg sm:text-2xl">
+          దాసరి చిన్న గంగయ్య గారికి ఎందుకు ఓటు వేయాలి?
+        </p>
+      </div>
+
+      <div id="qaAccordion" class="space-y-3.5">
+        <!-- Q1 -->
+        <div class="glass-card rounded-2xl border border-slate-200/90 overflow-hidden">
+          <button type="button" aria-expanded="true" class="qa-trigger w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-extrabold text-slate-900 hover:bg-emerald-50/60 transition">
+            <span>
+              <span class="block">1. Why should we vote for Dasari Chinna Gangaiah?</span>
+              <span class="te block text-emerald-800 text-sm font-bold mt-0.5">1. దాసరి చిన్న గంగయ్య గారికి ఎందుకు ఓటు వేయాలి?</span>
+            </span>
+            <span class="qa-icon text-emerald-700 text-xl font-bold shrink-0">−</span>
+          </button>
+          <div class="qa-panel px-5 sm:px-6 pb-5 text-sm text-slate-700 leading-relaxed space-y-2 border-t border-slate-100 pt-3">
+            <p>Because he treats Sarpanch leadership as 365-day service to Tallapalli families—combining proven grassroots work on water, roads, and drainage with a clear, accountable 2026 vision for youth, farmers, and elders.</p>
+            <p class="te text-emerald-950 font-medium">ఎందుకంటే ఆయన సర్పంచ్ పదవిని 365 రోజుల ప్రజా సేవగా భావిస్తారు. తాగునీరు, సీసీ రోడ్లు, డ్రైనేజీ పనులతో పాటు యువత, రైతులు మరియు పెద్దల సంక్షేమం కోసం స్పష్టమైన 2026 విజన్‌తో పనిచేస్తున్నారు.</p>
+          </div>
+        </div>
+
+        <!-- Q2 -->
+        <div class="glass-card rounded-2xl border border-slate-200/90 overflow-hidden">
+          <button type="button" aria-expanded="false" class="qa-trigger w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-extrabold text-slate-900 hover:bg-emerald-50/60 transition">
+            <span>
+              <span class="block">2. How is he different from leaders who forget voters after winning?</span>
+              <span class="te block text-emerald-800 text-sm font-bold mt-0.5">2. గెలిచిన తర్వాత ఓటర్లను మర్చిపోయే నాయకులకు, ఆయనకు తేడా ఏమిటి?</span>
+            </span>
+            <span class="qa-icon text-emerald-700 text-xl font-bold shrink-0">+</span>
+          </button>
+          <div class="qa-panel hidden px-5 sm:px-6 pb-5 text-sm text-slate-700 leading-relaxed space-y-2 border-t border-slate-100 pt-3">
+            <p>Others appear only during elections and vanish afterward. Chinna lives right here in Tallapalli every single day—standing beside families in emergencies, festivals, and civic issues without needing an appointment.</p>
+            <p class="te text-emerald-950 font-medium">ఇతరులు ఎన్నికల సమయంలో మాత్రమే కనిపించి తర్వాత మాయమవుతారు. కానీ చిన్న గారు ప్రతిరోజూ తల్లపల్లిలోనే ఉంటూ, ప్రతి ఇంటి కష్టసుఖాల్లో అండగా నిలబడతారు.</p>
+          </div>
+        </div>
+
+        <!-- Q3 -->
+        <div class="glass-card rounded-2xl border border-slate-200/90 overflow-hidden">
+          <button type="button" aria-expanded="false" class="qa-trigger w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-extrabold text-slate-900 hover:bg-emerald-50/60 transition">
+            <span>
+              <span class="block">3. What development work has he already done in Tallapalli?</span>
+              <span class="te block text-emerald-800 text-sm font-bold mt-0.5">3. తల్లపల్లిలో ఆయన ఇప్పటికే చేసిన అభివృద్ధి పనులు ఏమిటి?</span>
+            </span>
+            <span class="qa-icon text-emerald-700 text-xl font-bold shrink-0">+</span>
+          </button>
+          <div class="qa-panel hidden px-5 sm:px-6 pb-5 text-sm text-slate-700 leading-relaxed space-y-2 border-t border-slate-100 pt-3">
+            <p>He has actively worked on drainage desilting, internal CC road repairs, drinking water pipeline extensions, youth playground levelling, pension documentation for elders, and organizing village cultural events.</p>
+            <p class="te text-emerald-950 font-medium">డ్రైనేజీ పూడికతీత, సీసీ రోడ్ల మరమ్మతులు, తాగునీటి పైప్‌లైన్ల విస్తరణ, యువజన క్రీడా మైదానం, పెద్దల పెన్షన్ సహాయం మరియు గ్రామ సాంస్కృతిక కార్యక్రమాలను ఆయన ఇప్పటికే నిర్వహించారు.</p>
+          </div>
+        </div>
+
+        <!-- Q4 -->
+        <div class="glass-card rounded-2xl border border-slate-200/90 overflow-hidden">
+          <button type="button" aria-expanded="false" class="qa-trigger w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-extrabold text-slate-900 hover:bg-emerald-50/60 transition">
+            <span>
+              <span class="block">4. How will Panchayat funds be kept transparent?</span>
+              <span class="te block text-emerald-800 text-sm font-bold mt-0.5">4. గ్రామ పంచాయతీ నిధులను పారదర్శకంగా ఎలా నిర్వహిస్తారు?</span>
+            </span>
+            <span class="qa-icon text-emerald-700 text-xl font-bold shrink-0">+</span>
+          </button>
+          <div class="qa-panel hidden px-5 sm:px-6 pb-5 text-sm text-slate-700 leading-relaxed space-y-2 border-t border-slate-100 pt-3">
+            <p>All sanctioned grants, work estimates, and completed expenses will be presented openly in regular Gram Sabhas so every resident of Tallapalli knows where public funds are spent.</p>
+            <p class="te text-emerald-950 font-medium">గ్రామ పంచాయతీకి మంజూరైన ప్రతి నిధి, అంచనా వ్యయం మరియు పూర్తయిన పనుల వివరాలను క్రమం తప్పకుండా గ్రామ సభలలో ప్రజల ముందు ఉంచుతారు.</p>
+          </div>
+        </div>
+
+        <!-- Q5 -->
+        <div class="glass-card rounded-2xl border border-slate-200/90 overflow-hidden">
+          <button type="button" aria-expanded="false" class="qa-trigger w-full px-5 sm:px-6 py-4 text-left flex items-center justify-between gap-4 font-extrabold text-slate-900 hover:bg-emerald-50/60 transition">
+            <span>
+              <span class="block">5. How can villagers reach him directly after the election?</span>
+              <span class="te block text-emerald-800 text-sm font-bold mt-0.5">5. ఎన్నికల తర్వాత గ్రామస్తులు ఆయనను నేరుగా ఎలా సంప్రదించవచ్చు?</span>
+            </span>
+            <span class="qa-icon text-emerald-700 text-xl font-bold shrink-0">+</span>
+          </button>
+          <div class="qa-panel hidden px-5 sm:px-6 pb-5 text-sm text-slate-700 leading-relaxed space-y-2 border-t border-slate-100 pt-3">
+            <p>Call or WhatsApp <strong>9652630901</strong> anytime, log a tracking ID on this Citizen Desk, or meet him in person in Tallapalli daily—no middlemen required.</p>
+            <p class="te text-emerald-950 font-medium">ఎప్పుడైనా <strong>9652630901</strong> నంబర్‌కు నేరుగా కాల్ లేదా వాట్సాప్ చేయవచ్చు, ఈ వెబ్‌సైట్ సిటిజన్ డెస్క్‌లో ఫిర్యాదు నమోదు చేయవచ్చు, లేదా ప్రతిరోజూ గ్రామంలోనే నేరుగా కలవవచ్చు.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION 8: Direct Contact Footer -->
+  <footer id="contact" class="bg-emerald-950 text-white pt-14 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 pb-10 border-b border-emerald-800/80">
+        <div class="space-y-2">
+          <h3 class="text-xl font-extrabold text-white">Dasari Chinna Gangaiah (Chinna)</h3>
+          <p class="text-sm font-bold text-emerald-200 te">దాసరి చిన్న గంగయ్య (చిన్న)</p>
+          <p class="text-xs sm:text-sm text-white/90 font-semibold">“Your Trust — The Future of Coming Generations”</p>
+          <p class="text-amber-300 font-bold text-sm te">“మీ భరోసా — రేపటి భావి తరాల భవిష్యత్తు”</p>
+          <p class="text-xs text-emerald-200/90 leading-relaxed pt-1">
+            Candidate for Sarpanch • Tallapalli Gram Panchayat • Poll Date: November 29, 2026.
+          </p>
+        </div>
+
+        <div class="space-y-2">
+          <h4 class="text-xs font-extrabold uppercase tracking-wider text-amber-300">Direct Helpline &amp; WhatsApp • <span class="te normal-case">నేరుగా సంప్రదించండి</span></h4>
+          <p class="text-xl font-extrabold text-white">+91 9652630901</p>
+          <p class="text-xs text-emerald-200">Tallapalli Village, Telangana • Available 365 Days</p>
+          <p class="text-xs text-emerald-300 te">తల్లపల్లి గ్రామం, తెలంగాణ • 365 రోజులు అందుబాటులో</p>
+        </div>
+
+        <div class="flex flex-col sm:flex-row md:flex-col gap-3 justify-center">
+          <a href="tel:+919652630901"
+            class="px-5 py-3 rounded-xl bg-white/10 hover:bg-white/20 border border-white/20 text-white font-bold text-sm text-center transition">
+            Call Now: 9652630901 <span class="te block text-xs text-emerald-200">ఇప్పుడే కాల్ చేయండి</span>
+          </a>
+          <a href="https://wa.me/919652630901?text=Namaste%20Dasari%20Chinna%20Gangaiah%20garu,%20we%20stand%20with%20you%20in%20Tallapalli!"
+            target="_blank" rel="noopener noreferrer"
+            class="px-5 py-3 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-extrabold text-sm text-center shadow-lg transition">
+            Message on WhatsApp <span class="te block text-xs text-slate-900">వాట్సాప్‌లో సందేశం పంపండి</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-emerald-300/80 gap-2">
+        <p>© 2026 Dasari Chinna Gangaiah (Chinna) — Tallapalli Gram Panchayat Campaign.</p>
+        <p>Poll Date: November 29, 2026 <span class="te">• పోలింగ్ తేదీ: నవంబర్ 29, 2026</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Mobile Quick-Action Bar -->
+  <div class="fixed bottom-0 inset-x-0 z-40 md:hidden bg-white/95 backdrop-blur-xl border-t border-slate-200 px-3 py-2 flex items-center gap-2.5 shadow-2xl">
+    <a href="tel:+919652630901"
+      class="flex-1 py-2 px-3 rounded-xl bg-slate-900 text-white font-bold text-xs text-center flex flex-col items-center justify-center">
+      <span>Call 9652630901</span>
+      <span class="te text-[10px] text-slate-300">కాల్ చేయండి</span>
+    </a>
+    <a href="https://wa.me/919652630901?text=Namaste%20Chinna%20garu,%20connecting%20from%20Tallapalli!"
+      target="_blank" rel="noopener noreferrer"
+      class="flex-1 py-2 px-3 rounded-xl bg-emerald-700 text-white font-extrabold text-xs text-center flex flex-col items-center justify-center shadow">
+      <span>WhatsApp Chinna</span>
+      <span class="te text-[10px] text-emerald-100">వాట్సాప్ చేయండి</span>
+    </a>
+  </div>
+
+  <script>
+    // Dignified inline SVG portrait fallback when local image files are unavailable in sandbox
+    function handlePortraitFallback(imgEl, titleText, subtitleText) {
+      if (!imgEl || imgEl.dataset.fallbackApplied === 'true') return;
+      imgEl.dataset.fallbackApplied = 'true';
+      imgEl.classList.remove('scale-[1.52]', 'object-[50%_23%]');
+      const svg = `
+        <svg xmlns="http://www.w3.org/2000/svg" width="600" height="750" viewBox="0 0 600 750">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#065f46"/>
+              <stop offset="100%" stop-color="#022c22"/>
+            </linearGradient>
+          </defs>
+          <rect width="600" height="750" fill="url(#bg)"/>
+          <circle cx="300" cy="255" r="95" fill="#d97706" opacity="0.22"/>
+          <circle cx="300" cy="245" r="68" fill="#fef3c7"/>
+          <path d="M165 520 C165 415, 435 415, 435 520 L435 565 L165 565 Z" fill="#fef3c7"/>
+          <text x="300" y="630" text-anchor="middle" fill="#ffffff" font-family="sans-serif" font-size="26" font-weight="800">${titleText}</text>
+          <text x="300" y="668" text-anchor="middle" fill="#fcd34d" font-family="sans-serif" font-size="18" font-weight="600">${subtitleText}</text>
+        </svg>
+      `;
+      imgEl.src = 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg);
+    }
+
+    // Safe clipboard copy helper with execCommand fallback
+    function copyTextSafely(text, onDone) {
+      try {
+        const textarea = document.createElement('textarea');
+        textarea.value = text;
+        textarea.setAttribute('readonly', '');
+        textarea.style.position = 'fixed';
+        textarea.style.opacity = '0';
+        document.body.appendChild(textarea);
+        textarea.select();
+        document.execCommand('copy');
+        document.body.removeChild(textarea);
+        if (typeof onDone === 'function') onDone();
+      } catch (err) {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(() => {
+            if (typeof onDone === 'function') onDone();
+          }).catch(() => {});
+        }
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      // 1. Mobile Menu Toggle
+      const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+      const mobileMenu = document.getElementById('mobileMenu');
+      if (mobileMenuBtn && mobileMenu) {
+        mobileMenuBtn.addEventListener('click', () => {
+          const isHidden = mobileMenu.classList.toggle('hidden');
+          mobileMenuBtn.setAttribute('aria-expanded', String(!isHidden));
+        });
+        document.querySelectorAll('.mobile-nav-item').forEach((link) => {
+          link.addEventListener('click', () => {
+            mobileMenu.classList.add('hidden');
+            mobileMenuBtn.setAttribute('aria-expanded', 'false');
+          });
+        });
+      }
+
+      // 2. Live Countdown to November 29, 2026 (07:00 AM IST)
+      const pollTarget = new Date('2026-11-29T07:00:00+05:30').getTime();
+      const cdDays = document.getElementById('cd-days');
+      const cdHours = document.getElementById('cd-hours');
+      const cdMins = document.getElementById('cd-mins');
+      const cdSecs = document.getElementById('cd-secs');
+
+      function updateCountdown() {
+        if (!cdDays || !cdHours || !cdMins || !cdSecs) return;
+        const diff = Math.max(0, pollTarget - Date.now());
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff / (1000 * 60 * 60)) % 24);
+        const mins = Math.floor((diff / (1000 * 60)) % 60);
+        const secs = Math.floor((diff / 1000) % 60);
+
+        cdDays.textContent = String(days).padStart(2, '0');
+        cdHours.textContent = String(hours).padStart(2, '0');
+        cdMins.textContent = String(mins).padStart(2, '0');
+        cdSecs.textContent = String(secs).padStart(2, '0');
+      }
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      // 3. Works & Vision Category Filter
+      const filterBtns = document.querySelectorAll('.work-filter-btn');
+      const workCards = document.querySelectorAll('.work-card');
+      filterBtns.forEach((btn) => {
+        btn.addEventListener('click', () => {
+          const targetCat = btn.dataset.filter;
+          filterBtns.forEach((b) => {
+            const active = b === btn;
+            b.classList.toggle('bg-emerald-800', active);
+            b.classList.toggle('text-white', active);
+            b.classList.toggle('shadow-sm', active);
+            b.classList.toggle('bg-slate-100', !active);
+            b.classList.toggle('text-slate-700', !active);
+          });
+
+          workCards.forEach((card) => {
+            const match = targetCat === 'all' || card.dataset.category === targetCat;
+            card.classList.toggle('hidden', !match);
+          });
+        });
+      });
+
+      // 4. Door-to-Door Home Visit Request Form
+      const visitForm = document.getElementById('visitForm');
+      const visitFeedback = document.getElementById('visitFeedback');
+      const copyVisitBtn = document.getElementById('copyVisitBtn');
+
+      function buildVisitMessage() {
+        const name = (document.getElementById('visitName')?.value || '').trim();
+        const ward = (document.getElementById('visitWard')?.value || '').trim();
+        const purpose = document.getElementById('visitPurpose')?.value || 'Campaign Meet';
+        return (
+          `Namaste Dasari Chinna Gangaiah garu,\n` +
+          `Tallapalli Door-to-Door Home Visit Request:\n` +
+          `• Name: ${name}\n` +
+          `• Ward / Street: ${ward}\n` +
+          `• Purpose: ${purpose}`
+        );
+      }
+
+      if (visitForm) {
+        visitForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          const msg = buildVisitMessage();
+          if (visitFeedback) {
+            visitFeedback.classList.remove('hidden');
+            visitFeedback.innerHTML = `Home visit request prepared! Opening WhatsApp to 9652630901... <span class="te block text-emerald-800 mt-0.5">మీ ఇంటి సందర్శన అభ్యర్థన సిద్ధమైంది! వాట్సాప్ తెరవబడుతోంది...</span>`;
+          }
+          window.open(`https://wa.me/919652630901?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      if (copyVisitBtn) {
+        copyVisitBtn.addEventListener('click', () => {
+          const name = (document.getElementById('visitName')?.value || '').trim();
+          const ward = (document.getElementById('visitWard')?.value || '').trim();
+          if (!name || !ward) {
+            if (visitFeedback) {
+              visitFeedback.classList.remove('hidden');
+              visitFeedback.textContent = 'Please enter your Name and Ward/Street first. / దయచేసి ముందుగా మీ పేరు మరియు వీధి పేరు నమోదు చేయండి.';
+            }
+            return;
+          }
+          copyTextSafely(buildVisitMessage(), () => {
+            if (visitFeedback) {
+              visitFeedback.classList.remove('hidden');
+              visitFeedback.textContent = 'Home visit request copied to clipboard! Paste into WhatsApp (9652630901).';
+            }
+          });
+        });
+      }
+
+      // 5. Citizen Complaint Desk (Generates TLP-2026-XXXX)
+      const complaintForm = document.getElementById('complaintForm');
+      const compFeedback = document.getElementById('compFeedback');
+      const copyCompBtn = document.getElementById('copyCompBtn');
+      let lastTrackingId = `TLP-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+
+      function buildComplaintMessage(trackingId) {
+        const name = (document.getElementById('compName')?.value || '').trim();
+        const phone = (document.getElementById('compPhone')?.value || '').trim();
+        const ward = (document.getElementById('compWard')?.value || '').trim();
+        const category = document.getElementById('compCategory')?.value || 'Water';
+        const desc = (document.getElementById('compDesc')?.value || '').trim();
+        return (
+          `Namaste Dasari Chinna Gangaiah garu,\n` +
+          `Tallapalli Citizen Desk Complaint [${trackingId}]:\n` +
+          `• Name: ${name}\n` +
+          `• Phone: ${phone}\n` +
+          `• Ward / Street: ${ward}\n` +
+          `• Category: ${category}\n` +
+          `• Details: ${desc}`
+        );
+      }
+
+      if (complaintForm) {
+        complaintForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          lastTrackingId = `TLP-2026-${Math.floor(1000 + Math.random() * 9000)}`;
+          const msg = buildComplaintMessage(lastTrackingId);
+          if (compFeedback) {
+            compFeedback.classList.remove('hidden');
+            compFeedback.innerHTML = `
+              <div class="font-extrabold text-emerald-900">Tracking ID Generated: <span class="text-amber-800">${lastTrackingId}</span></div>
+              <div>Forwarding your complaint directly to Dasari Chinna Gangaiah on WhatsApp (9652630901)...</div>
+              <div class="te text-emerald-800">మీ ఫిర్యాదు ట్రాకింగ్ ఐడీతో వాట్సాప్ (9652630901) ద్వారా పంపబడుతోంది...</div>
+            `;
+          }
+          window.open(`https://wa.me/919652630901?text=${encodeURIComponent(msg)}`, '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      if (copyCompBtn) {
+        copyCompBtn.addEventListener('click', () => {
+          const name = (document.getElementById('compName')?.value || '').trim();
+          const desc = (document.getElementById('compDesc')?.value || '').trim();
+          if (!name || !desc) {
+            if (compFeedback) {
+              compFeedback.classList.remove('hidden');
+              compFeedback.textContent = 'Please fill in your Name and Issue Description before copying. / దయచేసి ముందుగా వివరాలు నమోదు చేయండి.';
+            }
+            return;
+          }
+          copyTextSafely(buildComplaintMessage(lastTrackingId), () => {
+            if (compFeedback) {
+              compFeedback.classList.remove('hidden');
+              compFeedback.innerHTML = `
+                <div class="font-extrabold text-emerald-900">Copied with Tracking ID: <span class="text-amber-800">${lastTrackingId}</span></div>
+                <div>Details copied to clipboard for WhatsApp (9652630901).</div>
+              `;
+            }
+          });
+        });
+      }
+
+      // 6. Interactive Voter Q&A Accordion
+      document.querySelectorAll('.qa-trigger').forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const panel = trigger.nextElementSibling;
+          const icon = trigger.querySelector('.qa-icon');
+          if (!panel) return;
+          const isOpen = !panel.classList.contains('hidden');
+          panel.classList.toggle('hidden', isOpen);
+          trigger.setAttribute('aria-expanded', String(!isOpen));
+          if (icon) icon.textContent = isOpen ? '+' : '−';
+        });
+      });
+
+      // 7. Smooth 3D Card Tilt on Desktop Pointer Devices
+      const canHover = window.matchMedia('(hover: hover) and (pointer: fine)').matches;
+      if (canHover) {
+        document.querySelectorAll('.tilt-card').forEach((card) => {
+          card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = (e.clientX - rect.left) / rect.width - 0.5;
+            const y = (e.clientY - rect.top) / rect.height - 0.5;
+            card.style.transform = `perspective(900px) rotateX(${(-y * 5).toFixed(2)}deg) rotateY(${(x * 5).toFixed(2)}deg) translateY(-2px)`;
+          });
+          card.addEventListener('mouseleave', () => {
+            card.style.transform = '';
+          });
+        });
+      }
+
+      // 8. Scroll Reveal & Scroll-Spy Active Navigation
+      const revealEls = document.querySelectorAll('.reveal');
+      if ('IntersectionObserver' in window) {
+        const revealObserver = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                revealObserver.unobserve(entry.target);
+              }
+            });
+          },
+          { threshold: 0.1 }
+        );
+        revealEls.forEach((el) => revealObserver.observe(el));
+      } else {
+        revealEls.forEach((el) => el.classList.add('is-visible'));
+      }
+
+      const navLinks = document.querySelectorAll('.nav-link');
+      const trackedSections = Array.from(navLinks)
+        .map((link) => document.querySelector(link.getAttribute('href')))
+        .filter(Boolean);
+
+      function updateScrollSpy() {
+        const scrollPos = window.scrollY + 140;
+        let currentId = '';
+        trackedSections.forEach((sec) => {
+          if (sec.offsetTop <= scrollPos) {
+            currentId = `#${sec.id}`;
+          }
+        });
+        navLinks.forEach((link) => {
+          link.classList.toggle('active', link.getAttribute('href') === currentId);
+        });
+      }
+      window.addEventListener('scroll', updateScrollSpy, { passive: true });
+      updateScrollSpy();
+    });
+  </script>
+</body>
+</html>
